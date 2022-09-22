@@ -17,3 +17,7 @@ https://github.com/trufflesecurity/truffleHog
 
 #semgrep link for pre-commit insatlation
 https://github.com/returntocorp/semgrep/blob/develop/.pre-commit-config.yaml
+
+
+#pip-audit link for pre-commit installation
+https://pypi.org/project/pip-audit/
