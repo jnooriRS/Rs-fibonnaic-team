@@ -10,12 +10,6 @@ repos:
     hooks:
     - id: black
       additional_dependencies: ['click==8.0.4']
-    #   name: black
-    #   entry: black
-    #   language: system
-    #   require_serial: true
-    #   types: [python]
-    #   always_run: true
 -   repo: local
     hooks:
     - id: pytest-check
@@ -26,7 +20,6 @@ repos:
       language: system
       pass_filenames: false
       always_run: true
-      repos:
 # - repo: local
 #   hooks:
 #     - id: trufflehog
@@ -35,3 +28,7 @@ repos:
 #       entry: bash -c 'docker run -v "$(pwd):/workdir" -i --rm trufflesecurity/trufflehog:latest git file:///jonas_asad --only-verified --fail'
 #       language: system
 #       stages: ["commit", "push"]
+- repo: https://github.com/pypa/pip-audit
+  rev: v2.4.4
+  hooks:
+  - id: pip-audit
