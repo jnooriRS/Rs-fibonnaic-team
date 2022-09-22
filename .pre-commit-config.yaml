@@ -32,6 +32,7 @@ repos:
   rev: v2.4.4
   hooks:
   - id: pip-audit
+#Semgrep instalation if you are using the docker image, however, if docker is not installed locally use the below
 - repo: local
   hooks:
     - id: semgrep
@@ -40,3 +41,11 @@ repos:
       entry: bash -c 'docker run -v "$(pwd):/src" -i --rm returntocorp/semgrep semgrep scan --json . --config=auto --output=semgrep_results.json'
       language: system
       stages: ["commit", "push"]
+# - repo: https://github.com/returntocorp/semgrep
+#   rev: "v0.100.0"
+#   hooks:
+#     - id: semgrep
+#       name: Semgrep Python
+#       types: [python]
+#       exclude: "^cli/tests/.+$|^scripts/.+$|^cli/setup.py$"
+#       args: ["--config", "https://semgrep.dev/p/python", "--error"]

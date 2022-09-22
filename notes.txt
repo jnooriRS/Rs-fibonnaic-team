@@ -5,7 +5,8 @@ jira smart commit working?
 1. .pre-commit config file
 2. add black =
 3. run pre-commit install
-5. When adding new hooks to .pre-commit?
+5. When adding new hooks to .pre-commit
+6. Issues with semgrep installed via pyhton, however, docker image is working
 
 
 
