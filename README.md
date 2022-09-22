@@ -14,3 +14,6 @@ https://docs.trufflesecurity.com/docs/scanning-git/precommit-hooks/
 
 #trfflehog github documentation
 https://github.com/trufflesecurity/truffleHog
+
+#semgrep link for pre-commit insatlation
+https://github.com/returntocorp/semgrep/blob/develop/.pre-commit-config.yaml
