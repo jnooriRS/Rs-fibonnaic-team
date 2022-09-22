@@ -21,3 +21,6 @@ https://github.com/returntocorp/semgrep/blob/develop/.pre-commit-config.yaml
 
 #pip-audit link for pre-commit installation
 https://pypi.org/project/pip-audit/
+
+#semgrep v black explanation
+https://www.libhunt.com/compare-semgrep-vs-black

@@ -1,3 +1,7 @@
 run pip install for:
 black
 pre-commit
+sem-grep
+py-test
+pip-audit
+trufflehog
