@@ -32,7 +32,10 @@ repos:
   rev: v2.4.4
   hooks:
   - id: pip-audit
-#Semgrep instalation if you are using the docker image, however, if docker is not installed locally use the below
+
+#Semgrep instalation if you want to use the docker image,
+#however, if a user does not have docker installed locally or just wants to use the python version
+#below is better. However, I have not managed to get it to work.
 # - repo: local
 #   hooks:
 #     - id: semgrep
