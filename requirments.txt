@@ -1,9 +1,6 @@
-run pip install for:
 black
 pre-commit
-sem-grep
-py-test
+pytest
 pip-audit
 trufflehog
-unittest
 Flask

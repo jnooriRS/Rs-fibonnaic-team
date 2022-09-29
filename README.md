@@ -27,3 +27,6 @@ https://www.libhunt.com/compare-semgrep-vs-black
 
 #Testing with pytest simple explanation
  https://www.youtube.com/watch?v=7BJ_BKeeJyM
+
+#Docker videos
+https://www.youtube.com/watch?v=p28piYY_wv8
