@@ -1,6 +1,6 @@
 # rs-fibonnaic-team
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
-
+Process  (1. flask app, 2. docker locally, 3. jenkins - docker integration)
 
 further documentation on pre-commit & githooks
 #https://pre-commit.com/
