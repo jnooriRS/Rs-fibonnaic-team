@@ -29,5 +29,5 @@ https://www.libhunt.com/compare-semgrep-vs-black
  https://www.youtube.com/watch?v=7BJ_BKeeJyM
 
 #Docker documentation for Dockerfile
-# Docker documentation for docker in docker and jenkins
+#Docker documentation for docker in docker and jenkins
 https://www.jenkins.io/doc/book/installing/docker/#setup-wizard
