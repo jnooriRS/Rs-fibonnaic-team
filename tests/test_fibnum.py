@@ -9,9 +9,8 @@ class TestFibonnaciResult(unittest.TestCase):
         self.assertEqual(fib_find(6), 8)
         self.assertEqual(fib_find(7), 13)
 
-
-# def test_input_type(self):
-# self.assertRaises(TypeError, fib_find, "some-string")
+    def test_input_type(self):
+        self.assertRaises(ValueError, fib_find, "some-string")
 
 
 if __name__ == "__main__":
