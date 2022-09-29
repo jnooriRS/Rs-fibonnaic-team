@@ -8,3 +8,4 @@ jira smart commit working?
 5. When adding new hooks to .pre-commit
 6. Issues with semgrep installed via pyhton, however, docker image is working
 7. Why does web-broweser not change to result when form submit it pressed? Still says home
+8. Run pytest tests/ command above
