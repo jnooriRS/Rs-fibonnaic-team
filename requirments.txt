@@ -5,3 +5,4 @@ sem-grep
 py-test
 pip-audit
 trufflehog
+unittest
