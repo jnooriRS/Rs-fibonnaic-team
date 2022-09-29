@@ -1,7 +1,7 @@
 jira smart commit working?
  code to run coverge
  pytest tests/ -vv --cov=. --cov-branch --cov-report=term-missing --cov-report html:reports/coverage/cov_html --cov-report=xml:reports/coverage/coverage.xml --junitxml=reports/xunit/test-results.xml -o junit_family=xunit1
-
+ pytest -v --cov=test_fibnum --cov-report=html
 1. .pre-commit config file
 2. add black =
 3. run pre-commit install
@@ -9,3 +9,4 @@ jira smart commit working?
 6. Issues with semgrep installed via pyhton, however, docker image is working
 7. Why does web-broweser not change to result when form submit it pressed? Still says home
 8. Run pytest tests/ command above
+9. Cannot raise a type-error in testing

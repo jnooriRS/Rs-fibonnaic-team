@@ -24,3 +24,6 @@ https://pypi.org/project/pip-audit/
 
 #semgrep v black explanation
 https://www.libhunt.com/compare-semgrep-vs-black
+
+#Testing with pytest simple explanation
+ https://www.youtube.com/watch?v=7BJ_BKeeJyM
