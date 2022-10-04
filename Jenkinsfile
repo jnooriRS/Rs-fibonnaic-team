@@ -16,7 +16,7 @@ pipeline {
             . .venv/bin/activate
             pip install -r requirements.txt
         '''
-        app = docker.build("jnooririversafe")
+          app = docker.build("jnooririversafe")
       }
     }
     stage("Test") {
