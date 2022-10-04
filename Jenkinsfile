@@ -9,9 +9,13 @@ pipeline {
    }
   stages {
     stage("Set Up") {
-      steps {
-        git branch: 'main', url: 'https://github.com/jnooriRS/rs-fibonnaic-team'
-      }
+    //   steps {
+    //     git branch: 'main', url: 'https://github.com/jnooriRS/rs-fibonnaic-team'
+    //   }
+        steps {
+            checkout([$class: 'GitSCM', branches: [[name: '*/main']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'github', url: 'https://github.com/jnooriRS/rs-fibonnaic-team.git']]])
+            sh "ls -lart ./*"
+        }
     }
     stage("Build docker image") {
       steps {
