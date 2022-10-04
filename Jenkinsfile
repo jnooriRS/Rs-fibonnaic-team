@@ -2,8 +2,14 @@ pipeline {
     agent {
         docker { image 'python:latest' }
    }
+   environment {
+      dockerImage =''
+      registry = 'jnooririversafe/janda'
+      registryCredential ='d34d387c-0abe-4e39-9260-588e5ad529aa'
+   }
   stages {
     stage("Set Up") {
+      echo 'Set up'
       steps {
         git branch: 'main', url: 'https://github.com/jnooriRS/rs-fibonnaic-team'
       }
@@ -27,7 +33,6 @@ pipeline {
         sh '''
             python -m venv .venv
             . .venv/bin/activate
-            pip install -r requirements-dev.txt
             pytest tests/ -vv --cov=. --cov-branch --cov-report=term-missing --cov-report html:reports/coverage/cov_html --cov-report=xml:reports/coverage/coverage.xml --junitxml=reports/xunit/test-results.xml -o junit_family=xunit1
         '''
       }
