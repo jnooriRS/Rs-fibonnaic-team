@@ -38,9 +38,11 @@ pipeline {
     stage("Deploy/Push Image") {
       steps {
         echo 'Placeholder Deploy Steps'
-        docker.withRegistry('https://registry.hub.docker.com', 'git') {
-        app.push("${env.BUILD_NUMBER}")
-        app.push("latest")
+        script {
+          docker.withRegistry('https://registry.hub.docker.com', 'git') {
+            app.push("${env.BUILD_NUMBER}")
+            app.push("latest")
+          }
         }
       }
     }
