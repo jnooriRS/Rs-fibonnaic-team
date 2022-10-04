@@ -9,8 +9,8 @@ pipeline {
    }
   stages {
     stage("Set Up") {
-      echo 'Set up'
       steps {
+        echo 'Set up'
         git branch: 'main', url: 'https://github.com/jnooriRS/rs-fibonnaic-team'
       }
     }
