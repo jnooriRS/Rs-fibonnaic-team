@@ -1,5 +1,6 @@
 FROM jenkins/jenkins:2.361.1-jdk11
 USER root
+RUN echo "GIt is working"
 RUN apt-get update && apt-get install -y lsb-release
 RUN curl -fsSLo /usr/share/keyrings/docker-archive-keyring.asc \
     https://download.docker.com/linux/debian/gpg
