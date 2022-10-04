@@ -4,7 +4,7 @@ pipeline {
    }
    environment {
        dockerImage =''
-       registry = 'https://github.com/jnooriRS/rs-fibonnaic-team'
+       registry = 'jnooriRS/rs-fibonnaic-team'
        registryCredential ='d34d387c-0abe-4e39-9260-588e5ad529aa'
    }
   stages {
@@ -24,23 +24,23 @@ pipeline {
         }
       }
     }
-    stage('Push image') {
-     steps {
-        script {
-            docker.withRegistry('https://registry.hub.docker.com', 'git') {
-            app.push("${env.BUILD_NUMBER}")
-            app.push("latest")
-            }
-        }
-      }
-    }
-     stage ('Push to Docker') {
-        steps {
-            script {
-               docker.withRegistry( '', registryCredential ) {
-                dockerImage.push()
-               }
-            }
-        }
-    }
+    // stage('Push image') {
+    //  steps {
+    //     script {
+    //         docker.withRegistry('https://registry.hub.docker.com', 'git') {
+    //         app.push("${env.BUILD_NUMBER}")
+    //         app.push("latest")
+    //         }
+    //     }
+    //   }
+    // }
+    //  stage ('Push to Docker') {
+    //     steps {
+    //         script {
+    //            docker.withRegistry( '', registryCredential ) {
+    //             dockerImage.push()
+    //            }
+    //         }
+    //     }
+    // }
 }}
