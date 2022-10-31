@@ -1,18 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="3" time="0.644" timestamp="2022-09-28T14:00:47.350315" hostname="RSL-LAP-100"><testcase classname="tests.test_fibnum.TestFibonnaciResult" name="test_input_type" file="tests\test_fibnum.py" line="11" time="0.004"><failure message="ValueError: invalid literal for int() with base 10: 'some-string'">self = &lt;tests.test_fibnum.TestFibonnaciResult testMethod=test_input_type&gt;
-
-    def test_input_type(self):
-&gt;       self.assertRaises(TypeError, fib_find, "some-string")
-
-tests\test_fibnum.py:13:
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-
-    def fib_find(N):
-        num1 = 0
-        num2 = 1
-        find = 2
-        fib_num = 0
-
-&gt;       while find &lt;= int(N):
-E       ValueError: invalid literal for int() with base 10: 'some-string'
-
-app.py:13: ValueError</failure></testcase><testcase classname="tests.test_fibnum.TestFibonnaciResult" name="test_number" file="tests\test_fibnum.py" line="6" time="0.002" /><testcase classname="tests.test_test" name="test_test" file="tests\test_test.py" line="0" time="0.001" /></testsuite></testsuites>
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="0" skipped="0" tests="6" time="0.544" timestamp="2022-10-31T10:11:00.579664" hostname="RSL-LAP-100"><testcase classname="tests.test_app" name="test_fib_find_1" file="tests\test_app.py" line="13" time="0.003" /><testcase classname="tests.test_app" name="test_fib_find_5" file="tests\test_app.py" line="17" time="0.002" /><testcase classname="tests.test_app" name="test_fib_find_10" file="tests\test_app.py" line="21" time="0.001" /><testcase classname="tests.test_fibnum.TestFibonnaciResult" name="test_input_type" file="tests\test_fibnum.py" line="11" time="0.002" /><testcase classname="tests.test_fibnum.TestFibonnaciResult" name="test_number" file="tests\test_fibnum.py" line="6" time="0.002" /><testcase classname="tests.test_test" name="test_test" file="tests\test_test.py" line="0" time="0.001" /></testsuite></testsuites>
